@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# losted’s dotfiles
 
 ![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
 
