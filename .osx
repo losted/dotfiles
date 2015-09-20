@@ -651,7 +651,10 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Transmission" "Twitter" "iCal"; do
 	killall "${app}" > /dev/null 2>&1
 done
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+echo "Completed. Note that some of these changes require a logout/restart to take effect."
+
+osascript -e 'display notification "Note that some of these changes require a logout/restart to take effect." with title "Completed"'
 
 # Set ALT+TAB to cycle through windows
 # /usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:27:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
