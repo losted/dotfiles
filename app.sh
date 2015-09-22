@@ -11,6 +11,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
+# Ajoute des PATH
+echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profile
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -22,6 +25,7 @@ brew tap caskroom/versions
 brew install brew-cask
 
 # Install Apps
+brew cask install git
 brew cask install sublime-text3
 brew cask install caskroom/cask/1password
 brew cask install caskroom/cask/adobe-creative-cloud
