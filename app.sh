@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install Homebrew and some apps.
+# Install Homebrew, some apps and tools.
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -8,8 +8,14 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Install Mac commandline tools
-xcode-select --install
+# Install commandline tools
+brew install coreutils
+brew install findutils
+brew install tree
+brew install webkit2png
+
+# Install GNU `sed`, overwriting the built-in `sed`.
+brew install gnu-sed --with-default-names
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -66,3 +72,5 @@ npm install --global pure-prompt
 
 # Set ZSH as default shell
 chsh -s /bin/zsh
+
+brew cleanup
