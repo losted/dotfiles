@@ -129,9 +129,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.BezelServices kDimTime -int 300
 
 # Set ALT+TAB to cycle through windows
-# /usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:27:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-# /usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:27:value:parameters:1 48" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-# /usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:27:value:parameters:2 524288" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "Add :AppleSymbolicHotKeys:27:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "Add :AppleSymbolicHotKeys:27:value:parameters:1 48" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+/usr/libexec/PlistBuddy -c "Add :AppleSymbolicHotKeys:27:value:parameters:2 524288" ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
 
 ###############################################################################
