@@ -24,11 +24,10 @@ sudo chown -R `whoami` /usr/local
 brew update
 
 # Install some Tap
-brew tap phinze/homebrew-cask
-brew tap caskroom/versions
+brew tap caskroom/homebrew-cask
 
 # Install Homebrew Cask
-brew install brew-cask
+brew install caskroom/cask/brew-cask
 
 # Install Apps
 brew cask install git
