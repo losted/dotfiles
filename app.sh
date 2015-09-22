@@ -17,6 +17,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # Ajoute des PATH
 echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profile
 
+# Fix Homebrew bug with permission
+sudo chown -R `whoami` /usr/local
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -47,6 +50,9 @@ brew cask install caskroom/cask/transmit
 brew cask install caskroom/cask/vagrant
 brew cask install caskroom/cask/vlc
 brew cask install caskroom/cask/vmware-fusion
+
+# Install Legacy Java for PHPStorm
+brew cask install caskroom/homebrew-versions/java6
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
