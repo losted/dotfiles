@@ -1,5 +1,5 @@
 # ZSH Theme
-ZSH_THEME=pygmalion
+ZSH_THEME="pure"
 
 # ZSH Plugins
 plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt gulp heroku history laravel5 nmap node npm phing rsync ssh-agent sublime )
