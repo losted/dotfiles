@@ -23,19 +23,20 @@ brew install brew-cask
 
 # Install Apps
 brew cask install sublime-text3
-brew cask install caskroom/cask/google-chrome
 brew cask install caskroom/cask/1password
-brew cask install caskroom/cask/vmware-fusion
-brew cask install caskroom/cask/evernote
+brew cask install caskroom/cask/adobe-creative-cloud
 brew cask install caskroom/cask/alfred
 brew cask install caskroom/cask/dropbox
-brew cask install caskroom/cask/skype
-brew cask install caskroom/cask/vlc
-brew cask install caskroom/cask/transmit
-brew cask install caskroom/cask/adobe-creative-cloud
+brew cask install caskroom/cask/evernote
+brew cask install caskroom/cask/google-chrome
 brew cask install caskroom/cask/kaleidoscope
 brew cask install caskroom/cask/phpstorm
 brew cask install caskroom/cask/sequel-pro
+brew cask install caskroom/cask/skype
+brew cask install caskroom/cask/spotify
+brew cask install caskroom/cask/transmit
+brew cask install caskroom/cask/vlc
+brew cask install caskroom/cask/vmware-fusion
 
 # Install ZSH+OH MY ZSH
 brew install zsh zsh-completions
