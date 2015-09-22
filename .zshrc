@@ -1,5 +1,11 @@
+# ZSH Theme
 ZSH_THEME=pygmalion
-# Use sublimetext for editing config files
-alias zshconfig="subl ~/.zshrc"
-alias envconfig="subl ~/Projects/config/env.sh"
+
+# ZSH Plugins
 plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+
+# Export our local bin path
+export PATH="/usr/local/bin:$PATH"
+
+# Use sublime as the default text editor
+export EDITOR='subl'
