@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install Homebrew + Homebrew Cask + Some apps + OH MY ZSH.
+# Install Homebrew and some apps.
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -30,13 +30,20 @@ brew cask install caskroom/cask/dropbox
 brew cask install caskroom/cask/evernote
 brew cask install caskroom/cask/google-chrome
 brew cask install caskroom/cask/kaleidoscope
+brew cask install caskroom/cask/node
 brew cask install caskroom/cask/phpstorm
 brew cask install caskroom/cask/sequel-pro
 brew cask install caskroom/cask/skype
+brew cask install caskroom/cask/slack
 brew cask install caskroom/cask/spotify
 brew cask install caskroom/cask/transmit
+brew cask install caskroom/cask/vagrant
 brew cask install caskroom/cask/vlc
 brew cask install caskroom/cask/vmware-fusion
+
+# Install Composer
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
 
 # Install ZSH+OH MY ZSH
 brew install zsh zsh-completions
