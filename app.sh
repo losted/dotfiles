@@ -53,5 +53,8 @@ sudo mv composer.phar /usr/local/bin/composer
 brew install zsh zsh-completions
 curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
+# Install ZSH Pure theme
+npm install --global pure-prompt
+
 # Set ZSH as default shell
 chsh -s /bin/zsh
