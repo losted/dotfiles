@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Install Homebrew + Homebrew Cask + Some apps.
+# Install Homebrew + Homebrew Cask + Some apps + OH MY ZSH.
 
 # Ask for the administrator password upfront.
 sudo -v
