@@ -86,11 +86,10 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 Suggestions/improvements
 [welcome](https://github.com/mathiasbynens/dotfiles/issues)!
 
-## Author
+## Authors
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
-|---|
-| [Mathias Bynens](https://mathiasbynens.be/) |
+Mathias Bynens https://mathiasbynens.be
+Luc Lapierre http://luclapierre.com
 
 ## Thanks to…
 
@@ -108,3 +107,4 @@ Suggestions/improvements
 * [Kevin Suttle](http://kevinsuttle.com/) and his [dotfiles repository](https://github.com/kevinSuttle/dotfiles) and [OSXDefaults project](https://github.com/kevinSuttle/OSXDefaults), which aims to provide better documentation for [`~/.osx`](https://mths.be/osx)
 * [Haralan Dobrev](http://hkdobrev.com/)
 * anyone who [contributed a patch](https://github.com/mathiasbynens/dotfiles/contributors) or [made a helpful suggestion](https://github.com/mathiasbynens/dotfiles/issues)
+* [Mathias Bynens](https://mathiasbynens.be)
