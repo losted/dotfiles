@@ -18,6 +18,8 @@ echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profi
 brew update
 
 # Install some Tap
+brew tap homebrew/dupes
+brew tap homebrew/homebrew-php
 brew tap caskroom/homebrew-cask
 brew tap caskroom/versions
 
