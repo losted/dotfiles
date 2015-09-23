@@ -38,9 +38,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # Ajoute des PATH
 echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profile
 
-# Fix Homebrew bug with permission
-sudo chown -R `whoami` /usr/local
-
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -77,6 +74,9 @@ brew cask install caskroom/homebrew-versions/java6
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+
+# Fix Homebrew bug with permission for OH MY ZSH install
+sudo chown -R `whoami` /usr/local
 
 # Install ZSH+OH MY ZSH
 brew install zsh zsh-completions
