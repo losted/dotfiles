@@ -89,6 +89,7 @@ Suggestions/improvements
 ## Authors
 
 Mathias Bynens https://mathiasbynens.be
+
 Luc Lapierre http://luclapierre.com
 
 ## Thanks to…
