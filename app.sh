@@ -11,10 +11,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Ajoute des PATH
+# Add some PATH
 echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profile
 
-# Make sure we’re using the latest Homebrew.
+# Make sure we’re using the latest Homebrew
 brew update
 
 # Install some Tap
@@ -30,7 +30,7 @@ brew install findutils
 brew install tree
 brew install webkit2png
 
-# Install GNU `sed`, overwriting the built-in `sed`.
+# Install GNU sed, overwriting the built-in 'sed'
 brew install gnu-sed --with-default-names
 
 # Install Apps
