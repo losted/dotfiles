@@ -31,6 +31,8 @@ brew install coreutils
 brew install findutils
 brew install tree
 brew install webkit2png
+brew install homebrew/php/php56
+brew install homebrew/php/php56-mcrypt
 
 # Install GNU sed, overwriting the built-in 'sed'
 brew install gnu-sed --with-default-names
