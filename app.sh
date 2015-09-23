@@ -48,6 +48,7 @@ brew cask install caskroom/cask/phpstorm
 brew cask install caskroom/cask/sequel-pro
 brew cask install caskroom/cask/skype
 brew cask install caskroom/cask/slack
+brew cask install caskroom/cask/sourcetree
 brew cask install caskroom/cask/spotify
 brew cask install caskroom/cask/transmit
 brew cask install caskroom/cask/vagrant
@@ -60,6 +61,9 @@ brew cask install caskroom/homebrew-versions/java6
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+
+# Install the Laravel installer with Composer
+composer global require "laravel/installer=~1.1"
 
 # Fix Homebrew bug with permission for OH MY ZSH install
 sudo chown -R `whoami` /usr/local
