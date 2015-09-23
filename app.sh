@@ -19,6 +19,7 @@ brew update
 
 # Install some Tap
 brew tap caskroom/homebrew-cask
+brew tap caskroom/versions
 
 # Install Homebrew Cask
 brew install caskroom/cask/brew-cask
