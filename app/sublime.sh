@@ -8,5 +8,5 @@ rm -rf Packages/
 rm -rf Installed\ Packages/
 
 # Symlink new directories from Dropbox
-ln -s ~/Dropbox/Sublime\ Text\ 3/Packages/ Packages/
-ln -s ~/Dropbox/Sublime\ Text\ 3/Installed\ Packages/ Installed\ Packages/
+ln -s ~/Dropbox/Sublime\ Text\ 3/Packages/ Packages
+ln -s ~/Dropbox/Sublime\ Text\ 3/Installed\ Packages/ Installed\ Packages
