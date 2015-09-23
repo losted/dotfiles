@@ -23,15 +23,6 @@ if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
    fi
 fi
 
-# Install commandline tools
-brew install coreutils
-brew install findutils
-brew install tree
-brew install webkit2png
-
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -46,6 +37,15 @@ brew tap caskroom/homebrew-cask
 
 # Install Homebrew Cask
 brew install caskroom/cask/brew-cask
+
+# Install commandline tools
+brew install coreutils
+brew install findutils
+brew install tree
+brew install webkit2png
+
+# Install GNU `sed`, overwriting the built-in `sed`.
+brew install gnu-sed --with-default-names
 
 # Install Apps
 brew cask install git
