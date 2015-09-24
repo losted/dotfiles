@@ -8,3 +8,6 @@ firewall-cmd --zone=public --add-port=8080/tcp --permanent
 firewall-cmd --zone=public --add-service=http --permanent
 firewall-cmd --reload
 firewall-cmd --list-all
+
+# Open port 8080 
+iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
