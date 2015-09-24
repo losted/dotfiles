@@ -23,3 +23,4 @@ composer.lock
 _ide_helper.php
 .env.*.php
 .env.php
+.env.example
