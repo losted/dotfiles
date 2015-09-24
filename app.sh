@@ -30,6 +30,7 @@ brew install caskroom/cask/brew-cask
 brew install coreutils
 brew install findutils
 brew install tree
+brew install wget
 brew install webkit2png
 brew install homebrew/php/php56
 brew install homebrew/php/php56-mcrypt
@@ -46,6 +47,7 @@ brew cask install caskroom/cask/alfred
 brew cask install caskroom/cask/dropbox
 brew cask install caskroom/cask/evernote
 brew cask install caskroom/cask/google-chrome
+brew cask install caskroom/cask/iterm2
 brew cask install caskroom/cask/kaleidoscope
 brew cask install caskroom/cask/node
 brew cask install caskroom/cask/phpstorm
