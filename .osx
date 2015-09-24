@@ -453,7 +453,7 @@ sudo mdutil -i on / > /dev/null
 sudo mdutil -E / > /dev/null
 
 ###############################################################################
-# Terminal                                                        #
+# Terminal                                                                    #
 ###############################################################################
 
 # Only use UTF-8 in Terminal.app
@@ -468,6 +468,13 @@ defaults write com.apple.terminal "Startup Window Settings" -string "losted"
 # Add some convenient keyboard shortcuts
 defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Next Tab" "^\U21E5"
 defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Previous Tab" "^$\U21E5"
+
+###############################################################################
+# iTerm2                                                                      #
+###############################################################################
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 ###############################################################################
 # Time Machine                                                                #
