@@ -34,6 +34,7 @@ brew install wget
 brew install webkit2png
 brew install homebrew/php/php56
 brew install homebrew/php/php56-mcrypt
+brew install homebrew/php/php56-xdebug
 
 # Install GNU sed, overwriting the built-in 'sed'
 brew install gnu-sed --with-default-names
@@ -80,5 +81,8 @@ curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | 
 
 # Set ZSH as default shell
 chsh -s /bin/zsh
+
+# Fix pbcopy
+brew install reattach-to-user-namespace --with-wrap-launchctl --with-wrap-pbcopy-and-pbpaste
 
 brew cleanup
