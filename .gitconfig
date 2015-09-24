@@ -6,7 +6,7 @@
     user = losted
 
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore
     editor = nano
     filemode = false
     trustctime = false
