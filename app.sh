@@ -18,6 +18,8 @@ echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profi
 brew update
 
 # Install some Tap
+brew tap homebrew/dupes
+brew tap homebrew/homebrew-php
 brew tap caskroom/homebrew-cask
 brew tap caskroom/versions
 
@@ -28,7 +30,10 @@ brew install caskroom/cask/brew-cask
 brew install coreutils
 brew install findutils
 brew install tree
+brew install wget
 brew install webkit2png
+brew install homebrew/php/php56
+brew install homebrew/php/php56-mcrypt
 
 # Install GNU sed, overwriting the built-in 'sed'
 brew install gnu-sed --with-default-names
@@ -42,12 +47,14 @@ brew cask install caskroom/cask/alfred
 brew cask install caskroom/cask/dropbox
 brew cask install caskroom/cask/evernote
 brew cask install caskroom/cask/google-chrome
+brew cask install caskroom/cask/iterm2
 brew cask install caskroom/cask/kaleidoscope
 brew cask install caskroom/cask/node
 brew cask install caskroom/cask/phpstorm
 brew cask install caskroom/cask/sequel-pro
 brew cask install caskroom/cask/skype
 brew cask install caskroom/cask/slack
+brew cask install caskroom/cask/sourcetree
 brew cask install caskroom/cask/spotify
 brew cask install caskroom/cask/transmit
 brew cask install caskroom/cask/vagrant
@@ -60,6 +67,9 @@ brew cask install caskroom/homebrew-versions/java6
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+
+# Install the Laravel installer with Composer
+composer global require "laravel/installer=~1.1"
 
 # Fix Homebrew bug with permission for OH MY ZSH install
 sudo chown -R `whoami` /usr/local

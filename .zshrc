@@ -10,6 +10,9 @@ plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx
 # Export our local bin PATH
 export PATH="~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 
+# Homebrew PHP CLI
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
 # Use sublime as the default text editor
 export EDITOR='subl'
 
