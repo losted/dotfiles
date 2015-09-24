@@ -12,3 +12,14 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Composer related
+/vendor
+composer.phar
+composer.lock
+
+
+# Laravel related
+_ide_helper.php
+.env.*.php
+.env.php
