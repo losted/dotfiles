@@ -476,6 +476,11 @@ defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Previou
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Install our custom profile
+defaults delete com.googlecode.iterm2
+cp com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+defaults read com.googlecode.iterm2
+
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
@@ -642,7 +647,7 @@ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-t
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
-	"Opera" "Safari" "Kaleidoscope" "SystemUIServer" "Terminal" \
+	"Opera" "Safari" "Kaleidoscope" "SystemUIServer" "Terminal" "iTerm" \
 	"Transmission" "iCal"; do
 	killall "${app}" > /dev/null 2>&1
 done
