@@ -618,8 +618,9 @@ defaults write org.m0k.transmission WarningLegal -bool false
 ###############################################################################
 
 # Install Sublime Text settings
-rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
-ln -s Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+# rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+# ln -s Sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+# FIND A GOOD STRAGEGY.
 
 ###############################################################################
 # Setup Dock Icons                                                            #
