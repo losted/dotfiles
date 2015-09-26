@@ -22,6 +22,7 @@ brew tap homebrew/dupes
 brew tap homebrew/homebrew-php
 brew tap caskroom/homebrew-cask
 brew tap caskroom/versions
+brew tap caskroom/fonts
 
 # Install Homebrew Cask
 brew install caskroom/cask/brew-cask
@@ -35,6 +36,7 @@ brew install webkit2png
 brew install homebrew/php/php56
 brew install homebrew/php/php56-mcrypt
 brew install homebrew/php/php56-xdebug
+brew install bash
 
 # Install GNU sed, overwriting the built-in 'sed'
 brew install gnu-sed --with-default-names
