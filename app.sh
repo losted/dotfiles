@@ -16,6 +16,7 @@ echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profi
 
 # Make sure we’re using the latest Homebrew
 brew update
+brew upgrade
 
 # Install some Tap
 brew tap homebrew/dupes
