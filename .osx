@@ -471,6 +471,10 @@ sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.terminal "Default Window Settings" -string "losted"
 defaults write com.apple.terminal "Startup Window Settings" -string "losted"
 
+# Or set the default theme to Pro
+# defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
+# defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
+
 # Add some convenient keyboard shortcuts
 defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Next Tab" "^\U21E5"
 defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Previous Tab" "^$\U21E5"
