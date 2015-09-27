@@ -14,4 +14,4 @@ composer global require fabpot/php-cs-fixer
 
 # Link preferences files
 rm -rf "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
-ln -s "`pwd`"/sublimetext3/User/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
+ln -s "`pwd`"/osx/apps/sublimetext3/User/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
