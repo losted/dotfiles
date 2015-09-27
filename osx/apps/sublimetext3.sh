@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-# WARNING: Remove old directories and symlink new ones from Dropbox
+# Install Sublime Text 3
+brew cask install sublime-text3
+
+# Open the app so the config files get initialized
+open -g "$HOME/Applications/Sublime Text.app" && sleep 2 && osascript -e 'quit app "Sublime Text"'
 
 # Install Package Control
 wget http://packagecontrol.io/Package%20Control.sublime-package -P "$HOME/Library/Application Support/Sublime Text 3/Installed Packages/" -N
