@@ -24,3 +24,11 @@ _ide_helper.php
 .env.*.php
 .env.php
 .env.example
+
+# Sublime Text things
+Package Control.cache/
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+
