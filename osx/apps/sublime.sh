@@ -9,5 +9,5 @@ wget http://packagecontrol.io/Package%20Control.sublime-package -P "$HOME/Librar
 composer global require fabpot/php-cs-fixer
 
 # Link preferences files
-rm -f "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
+rm -rf "$HOME/Library/Application Support/Sublime Text 3/Packages/User/"
 ln -s sublimetext3/User/ "$HOME/Library/Application Support/Sublime Text 3/Packages/User"
