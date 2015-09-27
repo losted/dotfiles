@@ -54,6 +54,7 @@ brew cask install caskroom/cask/evernote
 brew cask install caskroom/cask/google-chrome
 brew cask install caskroom/cask/iterm2
 brew cask install caskroom/cask/kaleidoscope
+brew cask install caskroom/cask/moom
 brew cask install caskroom/cask/node
 brew cask install caskroom/cask/phpstorm
 brew cask install caskroom/cask/sequel-pro
