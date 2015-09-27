@@ -1,0 +1,19 @@
+{
+	"color_scheme": "Packages/User/themes/Laravel.tmTheme",
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"shift_tab_unindent": true,
+	"show_full_path": true,
+	"show_minimap": false,
+	"show_panel_on_build": false,
+	"tabs_medium": true,
+	"theme": "predawn-DEV.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true
+}

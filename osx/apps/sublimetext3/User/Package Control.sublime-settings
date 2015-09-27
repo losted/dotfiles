@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"BracketHighlighter",
+		"Colorsublime",
+		"DocBlockr",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"Gutter Color",
+		"jQuery",
+		"Laravel Blade Highlighter",
+		"Package Control",
+		"Predawn",
+		"Pretty JSON",
+		"Sass",
+		"SFTP",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-php"
+	]
+}
