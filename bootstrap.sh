@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Starting script..."
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 # Install XCode & Command Line Tools to use GIT
@@ -17,13 +19,19 @@ if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
    fi
 fi
 
+echo "Pulling new updates..."
+
 git pull origin master;
+
+echo "Doing the thing"
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
 	source ~/.bash_profile;
 }
+
+echo "After doing it"
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt;
@@ -35,3 +43,5 @@ else
 	fi;
 fi;
 unset doIt;
+
+echo "Done"
