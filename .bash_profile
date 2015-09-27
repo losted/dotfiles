@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
 
+# Add some other PATH
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH";
+
 # Add Composer bin path to PATH
 export PATH="$HOME/.composer/vendor/bin:$PATH";
 

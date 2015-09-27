@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# Check for Homebrew installation
+if test ! $(which brew)
+then
+  # Install homebrew
+  osx/apps/homebrew.sh
+fi
+
 # fonts
 fonts=(
   font-m-plus

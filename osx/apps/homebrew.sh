@@ -12,11 +12,14 @@ fi
 
 # Update homebrew formaulaes
 brew update
+brew upgrade
 
-# Install some packages
-brew install wget ssh-copy-id coreutils hub trash tmux reattach-to-user-namespace
-
-# Install homebrew cask
-brew tap phinze/homebrew-cask
+# Install some Tap
+brew tap homebrew/dupes
+brew tap homebrew/homebrew-php
+brew tap caskroom/homebrew-cask
 brew tap caskroom/versions
-brew install brew-cask
+brew tap caskroom/fonts
+
+# Install Homebrew Cask
+brew install caskroom/cask/brew-cask
