@@ -16,5 +16,5 @@ fonts=(
 )
 
 # install fonts
-echo "installing fonts..."
+echo "Installing Fonts..."
 brew cask install ${fonts[@]}
