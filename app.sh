@@ -34,6 +34,7 @@ brew install findutils
 brew install tree
 brew install wget
 brew install webkit2png
+brew install imagemagick --with-webp
 brew install homebrew/php/php56
 brew install homebrew/php/php56-mcrypt
 brew install homebrew/php/php56-xdebug
