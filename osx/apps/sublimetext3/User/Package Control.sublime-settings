@@ -1,8 +1,6 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
+	"submit_usage": false,
 	"installed_packages":
 	[
 		"AdvancedNewFile",
