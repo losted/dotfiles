@@ -12,10 +12,13 @@ source osx/fonts.sh
 source osx/config.sh
 source osx/dock.sh
 
+# Brew cleanup
+brew cleanup
+
 # Close all Applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Google Chrome" "Mail" "Messages" \
-    "Opera" "Safari" "Kaleidoscope" "SystemUIServer" "Terminal" \
+    "Opera" "Safari" "Kaleidoscope" "SystemUIServer" "Terminal" "iTerm" \
     "Transmission" "iCal"; do
     killall "${app}" > /dev/null 2>&1
 done
@@ -23,7 +26,3 @@ done
 echo "Completed. Note that some of these changes require a logout/restart to take effect."
 
 osascript -e 'display notification "Note that some of these changes require a logout/restart to take effect." with title "Completed"'
-
-
-# Brew cleanup
-brew cleanup
