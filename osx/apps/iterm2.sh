@@ -13,7 +13,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Install our custom profile
 defaults delete com.googlecode.iterm2
-cp com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+cp osx/apps/iterm2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 defaults read com.googlecode.iterm2
 
 # Reset the preferences cache
