@@ -564,18 +564,3 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 
 # Disable continuous spell checking
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-    "Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
-    "Opera" "Safari" "Kaleidoscope" "SystemUIServer" "Terminal" "iTerm" \
-    "Transmission" "iCal"; do
-    killall "${app}" > /dev/null 2>&1
-done
-
-echo "Completed. Note that some of these changes require a logout/restart to take effect."
-
-osascript -e 'display notification "Note that some of these changes require a logout/restart to take effect." with title "Completed"'
