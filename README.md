@@ -62,4 +62,3 @@ osx/apps/transmit.sh
 * Setup the favorites in the finder with Projects and Screenshots
 * Import license/projets and other sensitive data
 * Make download a folder opening in list mode and add the Application folder back to the dock and make it pretty too 
-* Change the time it takes to turn off monitor after not touching the computer
