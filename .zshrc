@@ -7,6 +7,12 @@ ZSH_THEME="random"
 # ZSH Plugins
 plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt gulp heroku history laravel5 nmap node npm phing rsync sublime )
 
+# Load aliases
+source ~/.aliases
+
+# Load functions
+source ~/.functions
+
 # Export our local bin PATH
 export PATH="~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 
