@@ -49,6 +49,13 @@ osx/fonts.sh
 osx/games.sh
 ```
 
+### Or specific app
+
+```bash
+osx/apps/sublimetext3.sh
+osx/apps/transmit.sh
+```
+
 ### Todo
 
 * Make ALT+TAB switch to next window
