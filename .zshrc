@@ -1,7 +1,7 @@
 # Path to oh-my-zsh installation
 export ZSH=/Users/losted/.oh-my-zsh
 
-# ZSH Theme
+# ZSH Theme!
 ZSH_THEME="random"
 
 # ZSH Plugins
