@@ -2,7 +2,7 @@
 export ZSH=/Users/losted/.oh-my-zsh
 
 # ZSH Theme
-ZSH_THEME="random"
+ZSH_THEME="robbyrussell"
 
 # ZSH Plugins
 plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt heroku history laravel5 nmap node npm phing rsync )
