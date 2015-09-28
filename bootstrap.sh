@@ -14,7 +14,7 @@ backupdir="$HOME/dotfiles"$(date +%Y%m%d%H%M%S)
 mkdir -p $backupdir
 
 # list of files/folders to symlink in homedir
-files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .editorconfig .exports .functions .gitattributes .gitconfig .gitignore .screenrc .wgetrc .zshrc bin"
+files=".aliases .bash_profile .bash_prompt .bashrc .curlrc .editorconfig .exports .functions .gitattributes .gitconfig .gitignore .wgetrc .zshrc bin"
 
 # Pull latest changes
 git pull origin master
