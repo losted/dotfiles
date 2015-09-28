@@ -1,8 +1,0 @@
-# Set startup message
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Property of Luc Lapierre. If found contact luc@luclapierre.com"
-
-# Set a large scrollback buffer
-defscrollback 32000
-
-# Always start `screen` with UTF-8 enabled (`screen -U`)
-defutf8 on
