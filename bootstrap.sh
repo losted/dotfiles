@@ -1,27 +1,19 @@
 #!/usr/bin/env bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+# Directory to backup old dotfiles
+backupdir=~/dotfiles$(date +%Y%m%d%H%M%S)
+mkdir $backupdir
 
-# Install XCode & Command Line Tools
-if [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; then
-    xcode-select --install &> /dev/null
-    # Wait until the XCode Command Line Tools are installed
-    while [ $(xcode-select -p &> /dev/null; printf $?) -ne 0 ]; do
-        sleep 5
-    done
-	xcode-select -p &> /dev/null
-	if [ $? -eq 0 ]; then
-        # Prompt user to agree to the terms of the Xcode license
-        # https://github.com/alrra/dotfiles/issues/10
-       sudo xcodebuild -license
-   fi
-fi
+# list of files/folders to symlink in homedir
+files=" .aliases .bash_profile .bash_prompt .bashrc .curlrc .editorconfig .exports .functions .git .gitattributes .gitconfig .gitignore .hgignore .inputrc .screenrc .wgetrc .zshrc bin/"
 
 git pull origin master;
 
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
+	for file in $files; do
+	    mv ~/$file $backupdir
+	    ln -s $file ~/$file
+	done
 	source ~/.bash_profile;
 }
 
