@@ -15,6 +15,10 @@ source osx/dock.sh
 # Brew cleanup
 brew cleanup
 
+# Completed Message
+echo "Completed. Note that some of these changes require a logout/restart to take effect."
+osascript -e 'display notification "Note that some of these changes require a logout/restart to take effect." with title "Completed"'
+
 # Close all Applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Dock" "Finder" "Google Chrome" "Mail" "Messages" \
@@ -22,7 +26,3 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     "Transmission" "iCal"; do
     killall "${app}" > /dev/null 2>&1
 done
-
-echo "Completed. Note that some of these changes require a logout/restart to take effect."
-
-osascript -e 'display notification "Note that some of these changes require a logout/restart to take effect." with title "Completed"'
