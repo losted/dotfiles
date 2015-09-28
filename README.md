@@ -40,7 +40,7 @@ When setting up a new Mac, run the setup script to install, custom os configurat
 osx/setup.sh
 ```
 
-### Or install special parts
+### Or install special part
 
 ```bash
 osx/config.sh
