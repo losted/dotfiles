@@ -5,7 +5,7 @@ export ZSH=/Users/losted/.oh-my-zsh
 ZSH_THEME="random"
 
 # ZSH Plugins
-plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt gulp heroku history laravel5 nmap node npm phing rsync sublime )
+plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt heroku history laravel5 nmap node npm phing rsync )
 
 # Load aliases
 source ~/.aliases
