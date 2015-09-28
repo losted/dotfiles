@@ -17,7 +17,7 @@ brew cleanup
 
 # Desktop cleanup
 rm ~/Desktop/.DS_Store
-rm ~/Desktopn/.localized
+rm ~/Desktop/.localized
 
 # Completed Message
 echo "Completed. Note that some of these changes require a logout/restart to take effect."
