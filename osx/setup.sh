@@ -15,6 +15,10 @@ source osx/dock.sh
 # Brew cleanup
 brew cleanup
 
+# Desktop cleanup
+rm ~/Desktop/.DS_Store
+rm ~/Desktopn/.localized
+
 # Completed Message
 echo "Completed. Note that some of these changes require a logout/restart to take effect."
 osascript -e 'display notification "Note that some of these changes require a logout/restart to take effect." with title "Completed"'
