@@ -1,10 +1,13 @@
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
-# Directory aliases
+# Quick navigation aliases
 alias ..="cd .."
 alias ...="cd ../.."
+
+# Directory aliases
 alias h='cd ~'
+alias p='cd ~/Projects'
 
 # Dev aliases
 alias artisan='php artisan'
