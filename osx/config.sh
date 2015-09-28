@@ -254,6 +254,12 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 # Set the icon size of Dock items to 48 pixels
 defaults write com.apple.dock tilesize -int 48
 
+# Set the magnified size of Dock items to 48 pixels
+defaults write com.apple.dock largesize -int 52
+
+# Magnification on
+defaults write com.apple.dock magnification -bool true
+
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "genie"
 
@@ -514,6 +520,19 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
 
 # Enable stealth mode
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+
+###############################################################################
+# Energy Saver
+###############################################################################
+
+# Disable system sleep (2 hours)
+sudo pmset sleep 120
+
+# Disable display sleep (10 minutes)
+sudo pmset displaysleep 10
+
+# Enable wake on ethernet
+sudo pmset womp 1
 
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #
