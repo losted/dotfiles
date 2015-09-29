@@ -9,6 +9,12 @@ alias ...="cd ../.."
 alias h='cd ~'
 alias p='cd ~/Projects'
 
+# Git aliases
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+
 # Dev aliases
 alias artisan='php artisan'
 
