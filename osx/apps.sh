@@ -15,6 +15,7 @@ osx/apps/1password.sh
 osx/apps/adobe.sh
 osx/apps/alfred.sh
 osx/apps/chrome.sh
+osx/apps/colloquy.sh
 osx/apps/dropbox.sh
 osx/apps/evernote.sh
 osx/apps/git.sh
@@ -24,6 +25,7 @@ osx/apps/moom.sh
 osx/apps/node.sh
 osx/apps/phpstorm.sh
 osx/apps/sequelpro.sh
+osx/apps/skitch.sh
 osx/apps/skype.sh
 osx/apps/slack.sh
 osx/apps/sourcetree.sh
@@ -32,6 +34,7 @@ osx/apps/sublimetext3.sh
 osx/apps/transmission.sh
 osx/apps/transmit.sh
 osx/apps/vagrant.sh
+osx/apps/viscosity.sh
 osx/apps/vlc.sh
 osx/apps/vmware.sh
 osx/apps/zsh.sh

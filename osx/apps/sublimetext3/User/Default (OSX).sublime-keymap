@@ -3,4 +3,11 @@
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
     { "keys": ["super+1"], "command": "toggle_side_bar" },
     { "keys": ["super+enter"], "command": "toggle_full_screen" },
+    {
+        "button": "button1",
+        "count": 1,
+        "modifiers": ["ctrl"],
+        "press_command": "drag_select",
+        "command": "goto_definition"
+    }
 ]

@@ -180,7 +180,27 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 110 924 485 0 0 1440 878 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 878 </string>
+	<string>0 0 1440 900 0 0 1440 877 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>246 427 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 10</key>
+	<string>372 308 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>700 244 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>288 427 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>246 406 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>267 423 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 6</key>
+	<string>288 400 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 7</key>
+	<string>309 377 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>330 354 585 451 0 0 1440 878 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>351 331 585 451 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -912,7 +932,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>464805121.97063601</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>464805121.97068</real>
+	<real>466525502.36773002</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -975,7 +995,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-09-27T23:11:16Z</date>
+	<date>2015-10-14T14:22:35Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1006,6 +1026,10 @@
 	<true/>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
+	<key>WebKitDefaultFontSize</key>
+	<integer>11</integer>
+	<key>WebKitStandardFont</key>
+	<string>.AppleSystemUIFont</string>
 	<key>WindowNumber</key>
 	<true/>
 	<key>WindowStyle</key>

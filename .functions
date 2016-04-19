@@ -224,3 +224,11 @@ function o() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Return the meteo of the city
+function weather {
+    curl wttr.in/${1:-Montreal}
+}
+function meteo {
+    curl wttr.in/${1:-Montreal}
+}

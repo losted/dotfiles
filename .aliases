@@ -38,3 +38,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Json Pretty Formating
+alias prettyjson="python -m json.tool"
+
+# XML Pretty Formating
+alias prettyxml="xmllint --format"
