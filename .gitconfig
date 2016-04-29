@@ -1,12 +1,12 @@
 [user]
-	name = Luc Lapierre
-	email = losted@losted.net
+    name = Luc Lapierre
+    email = losted@losted.net
 
 [github]
     user = losted
 
 [core]
-	excludesfile = /Users/losted/.gitignore
+    excludesfile = /Users/losted/.gitignore
     editor = nano
     filemode = false
     trustctime = false
@@ -24,7 +24,7 @@
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     ll = log --pretty=oneline --graph --abbrev-commit
     lm = log --pretty=format:'* %s (%h)'
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     g = grep --break --heading --line-number
     amend = commit --amend --reuse-message=HEAD
     contrib = shortlog --summary --numbered
@@ -34,15 +34,18 @@
 
 [color]
     ui = auto
+    
 [color "branch"]
     current = yellow reverse
     local = yellow
     remote = green
+    
 [color "diff"]
     meta = yellow bold
     frag = magenta bold
     old = red bold
     new = green bold
+    
 [color "status"]
     added = yellow
     changed = green
@@ -72,19 +75,23 @@
 [diff]
     renames = copies
     tool = Kaleidoscope
+    
 [difftool "Kaleidoscope"]
     cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
 
 [merge]
     tool = Kaleidoscope
     conflictstyle = diff3
     defaultToUpstream = true
+    
 [mergetool "Kaleidoscope"]
     cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
     trustExitCode = true
+    
 [mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+    cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
