@@ -22,6 +22,7 @@
 		"Gutter Color",
 		"jQuery",
 		"JsFormat",
+		"Jump Along Indent",
 		"Laravel 5 Artisan",
 		"Laravel 5 Snippets",
 		"Laravel Blade Highlighter",
@@ -38,12 +39,14 @@
 		"SFTP",
 		"SideBarEnhancements",
 		"SideBarGit",
+		"Smart Match",
 		"SortBy",
 		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-php",
 		"Vagrant",
-		"Volt"
+		"Volt",
+		"WordPress"
 	],
 	"submit_usage": false
 }

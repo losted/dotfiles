@@ -2,5 +2,6 @@
 	{ "keys": ["ctrl+tab"], "command": "next_view" },
     { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
     { "keys": ["alt+forward_slash"], "command": "toggle_side_bar" },
-    { "keys": ["super+enter"], "command": "toggle_full_screen" }
+    { "keys": ["super+enter"], "command": "toggle_full_screen" },
+    { "keys": ["super+shift+a"], "command": "alignment" }
 ]

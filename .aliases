@@ -58,3 +58,5 @@ alias prettyjson="python -m json.tool"
 
 # XML Pretty Formating
 alias prettyxml="xmllint --format"
+
+alias screenname="echo ${STY#*.}"

@@ -1,3 +1,6 @@
+# Git shit
+*.orig
+
 # Compiled Python files
 *.pyc
 
