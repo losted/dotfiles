@@ -17,7 +17,7 @@ source ~/.aliases
 source ~/.functions
 
 # Export our local bin PATH
-export PATH="~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+export PATH="/Users/losted/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
 
 # Homebrew PHP CLI
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
