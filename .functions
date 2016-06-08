@@ -232,3 +232,8 @@ function weather {
 function meteo {
     curl wttr.in/${1:-Montreal}
 }
+
+# Homestead something...
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
