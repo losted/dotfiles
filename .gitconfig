@@ -1,4 +1,4 @@
-[user]
+    [user]
     name = losted
     email = losted@losted.net
 
@@ -36,7 +36,7 @@
     unadd = git rm --cached
     difftool-added = difftool --cached
     diff-added = diff --cached
-    cleanorig = "!sh find . -name '*.orig' -delete"
+    clean-orig = "!echo 'cleaning .orig files...' && find . -name '*.orig' -exec rm -v {} + && echo 'Done.'"
 
 [color]
     ui = auto
@@ -86,7 +86,7 @@
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 
 [merge]
     conflictstyle = diff3
