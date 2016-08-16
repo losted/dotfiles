@@ -3,6 +3,7 @@
 	"color_scheme": "Packages/User/themes/Laravel.tmTheme",
 	"folder_exclude_patterns":
 	[
+		".git"
 	],
 	"font_size": 12,
 	"hide_minimap": true,
