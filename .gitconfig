@@ -37,6 +37,7 @@
     difftool-added = difftool --cached
     diff-added = diff --cached
     clean-orig = "!echo 'cleaning .orig files...' && find . -name '*.orig' -exec rm -v {} + && echo 'Done.'"
+    web = instaweb --httpd=webrick
 
 [color]
     ui = auto
