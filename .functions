@@ -227,10 +227,10 @@ function tre() {
 
 # Return the meteo of the city
 function weather {
-    curl wttr.in/${1:-Montreal}
+    curl wttr.in/${1:-Montreal}"?m"
 }
 function meteo {
-    curl wttr.in/${1:-Montreal}
+    curl wttr.in/${1:-Montreal}"?m"
 }
 
 # Homestead something...
