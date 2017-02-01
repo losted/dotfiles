@@ -60,3 +60,5 @@ alias prettyjson="python -m json.tool"
 alias prettyxml="xmllint --format"
 
 alias screenname="echo ${STY#*.}"
+
+alias phpx="php -a"
