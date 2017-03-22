@@ -61,4 +61,6 @@ alias prettyxml="xmllint --format"
 
 alias screenname="echo ${STY#*.}"
 
+alias chrome='~/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
 alias phpx="php -a"
