@@ -1,0 +1,18 @@
+# Quick back
+alias ..="cd .."
+
+# Directory aliases
+alias h='cd ~'
+alias c='cd ~/code'
+
+# Git aliases
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit -m '
+
+# Dev aliases
+alias artisan='php artisan'
+
+# Execute PHP
+alias phpx="php -a"
