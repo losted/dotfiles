@@ -1,4 +1,4 @@
-    [user]
+[user]
     name = losted
     email = losted@losted.net
 
@@ -33,12 +33,13 @@
     pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
     dlc = difftool --cached HEAD^
     undo-commit = reset --soft HEAD^
-    unadd = rm --cached
+    unadd = reset HEAD
     difftool-added = difftool --cached
     diff-added = diff --cached
     clean-orig = "!echo 'cleaning .orig files...' && find . -name '*.orig' -exec rm -v {} + && echo 'Done.'"
     web = instaweb --httpd=webrick
     diff-pulled = difftool master@{1} master
+    delete-all-branch-but-master = "!sh -c \"git branch | grep -v master | xargs git branch -D\""
 
 [color]
     ui = auto
@@ -67,8 +68,6 @@
 
 [help]
     autocorrect = 1
-
-[difftool]
 
 [mergetool]
     prompt = false

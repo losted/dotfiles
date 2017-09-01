@@ -36,3 +36,9 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source $ZSH/oh-my-zsh.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/losted/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/losted/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/losted/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/losted/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

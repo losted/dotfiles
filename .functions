@@ -238,6 +238,14 @@ function homestead() {
     ( cd ~/Homestead && vagrant $* )
 }
 
+function stockiste() {
+    ( cd ~/Projects/stockiste/vagrant && vagrant $* )
+}
+
+function phalcon() {
+    ( cd ~/Projects/phalcon && vagrant $* )
+}
+
 # Colorize man page
 man() {
     env \
