@@ -13,7 +13,6 @@
 		"ApacheConf.tmLanguage",
 		"Babel",
 		"Blade Snippets",
-		"BracketHighlighter",
 		"Colorsublime",
 		"Compare Side-By-Side",
 		"Console API Snippets (JavaScript)",
@@ -51,6 +50,7 @@
 		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-php",
+		"Unicode Character Highlighter",
 		"Vagrant",
 		"Volt",
 		"WordPress"
