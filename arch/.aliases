@@ -1,11 +1,16 @@
 # Quick back
 alias ..="cd .."
 
+# Colored cat
+alias cat=ccat
+
 # Directory aliases
 alias h='cd ~'
 alias c='cd ~/code'
 
 # Git aliases
+alias got='git '
+alias god='git '
 alias gs='git status '
 alias ga='git add '
 alias gb='git branch '
@@ -16,3 +21,10 @@ alias artisan='php artisan'
 
 # Execute PHP
 alias phpx="php -a"
+
+# Sublime Text
+alias subl="subl3"
+alias s="subl3"
+
+# Meteo
+alias meteo=weather

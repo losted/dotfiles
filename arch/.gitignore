@@ -1,0 +1,40 @@
+
+# Git shit
+*.orig
+
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Composer related
+/vendor
+composer.phar
+composer.lock
+
+
+# Laravel related
+_ide_helper.php
+.env.*.php
+.env.php
+.env.example
+
+# Sublime Text things
+Package Control.cache/
+Package Control.last-run
+Package Control.merged-ca-bundle
+Package Control.system-ca-bundle
+Package Control.user-ca-bundle
+
+# PHPStorm
+.idea/
