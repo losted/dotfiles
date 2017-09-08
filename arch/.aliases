@@ -1,12 +1,11 @@
-# Quick back
-alias ..="cd .."
-
 # Colored cat
 alias cat=ccat
 
 # Directory aliases
+alias ..="cd .."
 alias h='cd ~'
 alias c='cd ~/code'
+alias ll='ls -aslh'
 
 # Git aliases
 alias got='git '
@@ -19,12 +18,15 @@ alias gc='git commit -m '
 # Dev aliases
 alias artisan='php artisan'
 
-# Execute PHP
+# PHP aliases
 alias phpx="php -a"
 
-# Sublime Text
+# Sublime Text aliases
 alias subl="subl3"
 alias s="subl3"
 
-# Meteo
+# Meteo aliases
 alias meteo=weather
+
+# The Matrix
+alias matrix=cmatrix

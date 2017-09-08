@@ -2,7 +2,7 @@
 function centiva() {
     if [ "$#" -eq  "0" ]
       then
-        cd ~/code/centiva_vagrant/centiva
+        cd ~/code/centiva_vagrant
     else
         ( cd ~/code/centiva_vagrant && vagrant $* )
     fi
@@ -10,7 +10,7 @@ function centiva() {
 function hydrogene() {
     if [ "$#" -eq  "0" ]
       then
-        cd ~/code/hydrogene_vagrant/admin.hydrogene.io
+        cd ~/code/hydrogene_vagrant
     else
         ( cd ~/code/hydrogene_vagrant && vagrant $* )
     fi
