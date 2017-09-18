@@ -21,10 +21,6 @@ alias artisan='php artisan'
 # PHP aliases
 alias phpx="php -a"
 
-# Sublime Text aliases
-alias subl="subl3"
-alias s="subl3"
-
 # Meteo aliases
 alias meteo=weather
 

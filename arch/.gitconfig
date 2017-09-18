@@ -1,0 +1,46 @@
+# This is Git's per-user configuration file.
+[user]
+    name = Luc Lapierre
+    email = luc@hydrogene.io
+
+[core]
+    excludesfile = /home/losted/.gitignore
+    editor = nano
+    filemode = false
+    trustctime = false
+
+[alias]
+    st = status
+    sts = status -sb
+    stl = ls-files -m -o --exclude-standard
+    ci = commit
+    br = branch
+    co = checkout
+    cr = clone --recursive
+    df = diff --word-diff
+    unstage = reset --hard HEAD
+    l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    ll = log --pretty=oneline --graph --abbrev-commit
+    lm = log --pretty=format:'* %s (%h)'
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    g = grep --break --heading --line-number
+    amend = commit --amend --reuse-message=HEAD
+    contrib = shortlog --summary --numbered
+    show-ignored = "! git clean -ndX | perl -pe 's/Would remove/Ignored:/'"
+    ld = "!sh -c \"git log --since '${1:-1} days ago' --oneline --author $(git config user.email)\" -"
+    pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+    dlc = difftool --cached HEAD^
+    undo-commit = reset --soft HEAD^
+    unadd = reset HEAD
+    difftool-added = difftool --cached
+    diff-added = diff --cached
+    clean-orig = "!echo 'cleaning .orig files...' && find . -name '*.orig' -exec rm -v {} + && echo 'Done.'"
+    web = instaweb --httpd=webrick
+    diff-pulled = difftool master@{1} master
+    delete-all-branch-but-master = "!sh -c \"git branch | grep -v master | xargs git branch -D\""
+
+[difftool]
+    prompt = false
+
+[mergetool]
+    prompt = false
