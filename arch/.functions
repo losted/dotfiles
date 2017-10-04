@@ -29,4 +29,9 @@ function weather() {
     curl wttr.in/${1:-Montreal}"?m"
 }
 
+# Run system wide update
+function update() {
+    yaourt -Suy --aur --noconfirm
+}
+
 

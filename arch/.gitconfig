@@ -44,3 +44,7 @@
 
 [mergetool]
     prompt = false
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
