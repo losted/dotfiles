@@ -38,6 +38,7 @@
     web = instaweb --httpd=webrick
     diff-pulled = difftool master@{1} master
     delete-all-branch-but-master = "!sh -c \"git branch | grep -v master | xargs git branch -D\""
+    pushup = push --set-upstream origin HEAD
 
 [difftool]
     prompt = false
@@ -48,3 +49,5 @@
 	tool = kdiff3
 [diff]
 	guitool = kdiff3
+[push]
+	default = current
