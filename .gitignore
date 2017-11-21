@@ -37,3 +37,6 @@ Package Control.user-ca-bundle
 
 # PHPStorm
 .idea/
+
+#
+known_hosts

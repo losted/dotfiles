@@ -1,3 +1,6 @@
+# Open
+alias open=dolphin
+
 # Colored cat
 alias cat=ccat
 
