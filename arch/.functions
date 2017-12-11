@@ -35,3 +35,8 @@ function update() {
 }
 
 
+# Run PHP server on given port (or 8888)
+function phps() {
+    php -S localhost:${1:-8888}
+}
+

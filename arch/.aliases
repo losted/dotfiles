@@ -29,3 +29,6 @@ alias meteo=weather
 
 # The Matrix
 alias matrix=cmatrix
+
+# Copy to clipboard from Command Line
+alias copy='xclip -sel clip'
