@@ -32,3 +32,6 @@ alias matrix=cmatrix
 
 # Copy to clipboard from Command Line
 alias copy='xclip -sel clip'
+
+# Show coinmarketcapcom data
+alias coin=coinmon

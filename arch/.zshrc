@@ -91,6 +91,8 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='nano'
 export VISUAL='nano'
 
+export PROMPT='[%D{%Y-%m-%f} %D{%L:%M:%S}] ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+
 # Archey stats
 archey
 
