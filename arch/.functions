@@ -39,4 +39,3 @@ function update() {
 function phps() {
     php -S localhost:${1:-8888}
 }
-

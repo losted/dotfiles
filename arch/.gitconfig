@@ -8,6 +8,7 @@
     editor = nano
     filemode = false
     trustctime = false
+	autocrlf = false
 
 [alias]
     st = status
