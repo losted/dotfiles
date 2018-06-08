@@ -1,1 +1,141 @@
-/home/losted/.wtf/config.yml
+wtf:
+  colors:
+    border:
+      focusable: darkslateblue
+      focused: orange
+      normal: gray
+  grid:
+    columns: [40, 40]
+    rows: [13, 13, 4]
+  refreshInterval: 1
+  mods:
+    gcal:
+      colors:
+        title: "red"
+        description: "lightblue"
+        highlights:
+        - ['1on1|1\/11', 'green']
+        - ['apple|google|aws', 'blue']
+        - ['interview|meet', 'magenta']
+        - ['lunch', 'yellow']
+        past: "gray"
+      conflictIcon: "🚨"
+      currentIcon: "💥"
+      displayResponseStatus: true
+      email: "chriscummer@me.com"
+      enabled: true
+      eventCount: 12
+      position:
+        top: 0
+        left: 0
+        height: 4
+        width: 1
+      refreshInterval: 300
+      secretFile: "~/.wtf/gcal/client_secret.json"
+      withLocation: true
+    jira:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      domain: "https://umbrellacorp.atlassian.net"
+      email: "chriscummer@me.com"
+      enabled: true
+      jql: "issueType = Story"
+      position:
+        top: 4
+        left: 1
+        height: 1
+        width: 2
+      project: "JIRA"
+      refreshInterval: 900
+      username: "chris.cummer"
+    git:
+      commitCount: 5
+      enabled: true
+      position:
+        top: 0
+        left: 3
+        height: 2
+        width: 2
+      refreshInterval: 8
+      repositories:
+      - "/Users/chris/go/src/github.com/senorprogrammer/wtf"
+      - "/Users/user/fakeapp"
+    clocks:
+      colors:
+        rows:
+          even: "lightblue"
+          odd: "white"
+      enabled: true
+      locations:
+        Montreal: "America/Toronto"
+      position:
+        top: 0
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 15
+      sort: "alphabetical"
+    security:
+      enabled: true
+      position:
+        top: 1
+        left: 0
+        height: 1
+        width: 1
+      refreshInterval: 3600
+    status:
+      enabled: true
+      position:
+        top: 2
+        left: 0
+        height: 1
+        width: 2
+      refreshInterval: 1
+    system:
+      enabled: true
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 3600
+    textfile:
+      enabled: true
+      filePath: "~/.wtf/config.yml"
+      position:
+        top: 1
+        left: 1
+        height: 1
+        width: 1
+      refreshInterval: 30
+    cryptolive:
+      colors:
+        from:
+          name: coral
+          displayName: grey
+        to:
+          name: white
+          price: green
+      currencies:
+        BTC:
+          displayName: Bitcoin
+          to:
+            - USD
+            - EUR
+            - ETH
+        ETH:
+          displayName: Ethereum
+          to:
+            - USD
+            - EUR
+            - ETH
+      enabled: true
+      position:
+        top: 5
+        left: 3
+        height: 2
+        width: 2
+      refreshInterval: 30
+      updateInterval: 15

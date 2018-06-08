@@ -35,3 +35,6 @@ alias copy='xclip -sel clip'
 
 # Show coinmarketcapcom data
 alias coin=coinmon
+
+# Cat with colors (pygmentize)
+alias pcat=pygmentize -g
