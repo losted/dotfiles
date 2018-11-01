@@ -39,3 +39,9 @@ function update() {
 function phps() {
     php -S localhost:${1:-8888}
 }
+
+# Remove Workbench sql_workspaces to prevent it from crashing...
+function fix_workbench() {
+    setopt localoptions rmstarsilent
+    rm -rf /home/losted/.mysql/workbench/sql_workspaces/*
+}
