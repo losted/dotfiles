@@ -5,6 +5,7 @@
     { "keys": ["alt+forward_slash"], "command": "toggle_side_bar" },
     { "keys": ["super+enter"], "command": "toggle_full_screen" },
     { "keys": ["super+shift+a"], "command": "alignment" },
+    { "keys": ["super+shift+alt+d"], "command": "find_all_under" },
     // Sublime PHP Companion
     { "keys": ["f9"], "command": "expand_fqcn" },
     { "keys": ["shift+f9"], "command": "expand_fqcn", "args": {"leading_separator": true} },
