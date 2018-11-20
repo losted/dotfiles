@@ -43,6 +43,17 @@ ZSH_THEME="robbyrussell"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+# History Size
+export HISTSIZE=100000
+export HISTFILESIZE=100000
+
+# History Ignore Duplicates
+setopt HIST_FIND_NO_DUPS
+
+# Share History between multiples shells
+setopt inc_append_history
+setopt share_history
+
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
@@ -55,7 +66,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git,docker,archlinux,node,npm,vagrant,zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +116,7 @@ source ~/.functions
 # NVM Thing
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# ZSH Auto-Suggestion
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
