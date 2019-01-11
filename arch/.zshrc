@@ -120,3 +120,5 @@ export NVM_DIR="$HOME/.nvm"
 # ZSH Auto-Suggestion
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+
+PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
