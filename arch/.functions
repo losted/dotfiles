@@ -7,6 +7,7 @@ function centiva() {
         ( cd ~/code/centiva_vagrant && vagrant $* )
     fi
 }
+
 function hydrogene() {
     if [ "$#" -eq  "0" ]
       then
@@ -15,6 +16,7 @@ function hydrogene() {
         ( cd ~/code/hydrogene_vagrant && vagrant $* )
     fi
 }
+
 function stockiste() {
     if [ "$#" -eq  "0" ]
       then
@@ -34,10 +36,14 @@ function update() {
     yaourt -Suy --aur --noconfirm
 }
 
-
 # Run PHP server on given port (or 8888)
 function phps() {
     php -S localhost:${1:-8888}
+}
+
+# Inspect SSL Certificate
+function inspect_ssl() {
+    openssl s_client -showcerts -connect ${1:-google.com}:443
 }
 
 # Remove Workbench sql_workspaces to prevent it from crashing...
