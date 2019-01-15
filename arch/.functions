@@ -46,8 +46,18 @@ function inspect_ssl() {
     openssl s_client -showcerts -connect ${1:-google.com}:443
 }
 
+# Dig all info from domain
+function digga() {
+    dig +nocmd ${1:-google.com} any +multiline +noall +answer
+}
+
 # Remove Workbench sql_workspaces to prevent it from crashing...
 function fix_workbench() {
     setopt localoptions rmstarsilent
     rm -rf /home/losted/.mysql/workbench/sql_workspaces/*
+}
+
+# Kill and restart sublime
+function restart_sublime() {
+    pkill sublime && subl
 }
