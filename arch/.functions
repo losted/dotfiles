@@ -60,7 +60,7 @@ function fix_workbench() {
     # Delete Workbench Cache
     rm -rf /home/losted/.mysql/workbench/sql_workspaces/*
     # Restart Workbench
-    mysql-workbench &> /dev/null &
+    nohup mysql-workbench &
 }
 
 # Kill and restart sublime
