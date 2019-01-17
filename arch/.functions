@@ -53,11 +53,18 @@ function digga() {
 
 # Remove Workbench sql_workspaces to prevent it from crashing...
 function fix_workbench() {
+    # Kill workbench if it's running
+    pkill workbench
+    # Setoption to start in silent mode... WTF
     setopt localoptions rmstarsilent
+    # Delete Workbench Cache
     rm -rf /home/losted/.mysql/workbench/sql_workspaces/*
+    # Restart Workbench
+    mysql-workbench &> /dev/null &
 }
 
 # Kill and restart sublime
 function restart_sublime() {
+    # Kill and restart sublime
     pkill sublime && subl
 }
