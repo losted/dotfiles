@@ -1,9 +1,6 @@
 " Show (partial) command in status line
 set showcmd
 
-" Show matching brackets
-set showmatch
-
 " Do case insensitive matching
 set ignorecase
 
@@ -57,3 +54,6 @@ filetype plugin indent on
 
 " Use tab for emmet completion
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+
+" use CTRL+ESC to toggle the NERDTREE sidebar
+map <C-c> :NERDTreeToggle<CR>
