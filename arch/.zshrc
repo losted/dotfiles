@@ -107,8 +107,8 @@ export VISUAL='nano'
 
 export PROMPT='[%D{%Y-%m-%f} %D{%L:%M:%S}] ${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
-# Archey stats
-archey
+# Archey stats (do not use on startup anymore (too slow))
+# archey
 
 # Load aliases
 source ~/.aliases
