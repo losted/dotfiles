@@ -1,6 +1,9 @@
 " Show (partial) command in status line
 set showcmd
 
+" Show matching brackets
+" set showmatch
+
 " Do case insensitive matching
 set ignorecase
 
