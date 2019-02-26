@@ -68,3 +68,8 @@ function restart_sublime() {
     # Kill and restart sublime
     pkill sublime && subl
 }
+
+# Start reddit client RTV
+function reddit() {
+    rtv
+}
