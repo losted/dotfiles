@@ -41,6 +41,11 @@ function phps() {
     php -S localhost:${1:-8888}
 }
 
+# Serve host through serveo.net
+function serve() {
+    autossh -M 0 -o ServerAliveInterval=600 -R 80:${1:-centiva.local}:80 serveo.net
+}
+
 # Inspect SSL Certificate
 function inspect_ssl() {
     openssl s_client -showcerts -connect ${1:-google.com}:443
@@ -72,4 +77,11 @@ function restart_sublime() {
 # Start reddit client RTV
 function reddit() {
     rtv
+}
+
+list_encoding()
+{
+    find . -type f -print0 | while IFS= read -r -d $'\0' file;
+      do file -i $file;
+    done
 }
