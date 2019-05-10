@@ -1,6 +1,8 @@
 # Start TMUX by default when starting ZSH
 if [ "$TMUX" = "" ]; then tmux; fi
 
+export TERM="xterm-256color"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export PATH=/home/losted/.config/composer/vendor/bin:$PATH
@@ -122,7 +124,21 @@ export NVM_DIR="$HOME/.nvm"
 
 # ZSH Auto-Suggestion
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=10'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=010'
+
+# List colors, a lot of colors!
+function clicolors() {
+    i=1
+    for color in {000..255}; do;
+        c=$c"$FG[$color]$color✔$reset_color  ";
+        if [ `expr $i % 8` -eq 0 ]; then
+            c=$c"\n"
+        fi
+        i=`expr $i + 1`
+    done;
+    echo $c | sed 's/%//g' | sed 's/{//g' | sed 's/}//g' | sed '$s/..$//';
+    c=''
+}
 
 PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 
