@@ -40,3 +40,6 @@ Package Control.user-ca-bundle
 
 #
 known_hosts
+
+.ssh/id_rsa
+.ssh/id_rsa.pub

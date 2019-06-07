@@ -165,3 +165,5 @@ fzf-open-file-or-dir() {
 }
 zle     -N   fzf-open-file-or-dir
 bindkey '^P' fzf-open-file-or-dir
+
+eval $(thefuck --alias)
