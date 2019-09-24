@@ -60,3 +60,6 @@ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " use CTRL+ESC to toggle the NERDTREE sidebar
 map <C-c> :NERDTreeToggle<CR>
+
+" set the VIM-EMMET pluggin shortcut to ,
+let g:user_emmet_leader_key=','
