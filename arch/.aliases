@@ -38,3 +38,7 @@ alias coin=coinmon
 
 # Cat with colors (pygmentize)
 alias pcat=pygmentize -g
+
+# Alias desktop
+alias desktop='cd ~/Desktop'
+
