@@ -1,0 +1,9 @@
+{
+    "php_cs_fixer_on_save": true,
+    "phpcs_command_on_save": true,
+    "phpcbf_on_save": true,
+    "phpcs_show_errors_on_save": false,
+    "phpcs_executable_path": "/Users/losted/.composer/vendor/bin/phpcs",
+    "php_cs_fixer_executable_path": "/Users/losted/.composer/vendor/bin/php-cs-fixer",
+    "phpcbf_executable_path": "/Users/losted/.composer/vendor/bin/phpcbf"
+}

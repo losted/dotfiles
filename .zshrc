@@ -5,10 +5,7 @@ export ZSH=/Users/losted/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # ZSH Plugins
-plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt heroku history laravel5 nmap node npm phing rsync )
-
-#
-
+plugins=(git colored-man colorize github jira vagrant virtualenv python brew osx zsh-syntax-highlighting bower composer grunt heroku history laravel5 nmap node npm phing rsync zsh-autosuggestions)
 
 # Load aliases
 source ~/.aliases
@@ -16,11 +13,8 @@ source ~/.aliases
 # Load functions
 source ~/.functions
 
-# Export our local bin PATH
-export PATH="/Users/losted/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
-
-# Homebrew PHP CLI
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+# Homebrew
+export PATH=/usr/local/sbin:$PATH
 
 # Use sublime as the default text editor
 export EDITOR='subl'
@@ -42,3 +36,15 @@ if [ -f '/Users/losted/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/losted/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/losted/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="/usr/local/Cellar/openvpn/2.4.6/sbin/openvpn:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
+
+# LibFFI
+export LDFLAGS="-L/usr/local/opt/libffi/lib"
+export CPPFLAGS="-I/usr/local/opt/libffi/include"
+export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig"

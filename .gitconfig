@@ -23,7 +23,7 @@
     l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     ll = log --pretty=oneline --graph --abbrev-commit
     lm = log --pretty=format:'* %s (%h)'
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --color --graph --date=short --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(Cyan)%ad %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     g = grep --break --heading --line-number
     amend = commit --amend --reuse-message=HEAD
     contrib = shortlog --summary --numbered
@@ -38,6 +38,7 @@
     web = instaweb --httpd=webrick
     diff-pulled = difftool master@{1} master
     delete-all-branch-but-master = "!sh -c \"git branch | grep -v master | xargs git branch -D\""
+    recent = "! git for-each-ref --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always|column -ts'|'}"
 
     #
     # Working with branches

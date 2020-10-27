@@ -258,3 +258,10 @@ man() {
         LESS_TERMCAP_us=$(printf "\e[1;32m") \
             man "$@"
 }
+
+charcoal_password() {
+	echo "Creating Charcoal Password... \n"
+	echo "Enter the password: "
+	read -s password
+    php -r 'echo password_hash("$password", PASSWORD_DEFAULT)."\n";'
+}
